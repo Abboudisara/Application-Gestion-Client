@@ -26,23 +26,55 @@ namespace Gestion_Client
 
         }
 
+        int cpt = -1; // indice
         private void button1_Click(object sender, EventArgs e)
         {
+            for(int i=0; i < ds.Tables["client"].Rows.Count; i++) // loup sur la collection
+            {
+                if (ressup.Text == ds.Tables["client"].Rows[i][0].ToString()) //linput qui reçois la recherche+ la table+la colone et ligne+changer string
+                {
+                    cpt = i; // indice=i
+                    break;
+                }
 
+            }
+            if (cpt==-1) // indice non trouvable
+            {
+                MessageBox.Show("Ce Client ne Pas Trouver");
+            }
+
+            else// trouver une enrg
+            {
+                ds.Tables["client"].Rows[cpt].Delete();
+                MessageBox.Show("le client a bient supprimer");
+            }
         }
          
         private void list1_Load(object sender, EventArgs e)
 
         {
-           // cnx.Open(); //ouverture d une base données
+           cnx.Open(); //ouverture d une base données
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM client", cnx); //pour données une commande 
             adapter.Fill(ds, "client");// pour remplir une base données virtuelle travailler avec la methode fill(Nom bd virtuelle,Nom de table)
             data.DataSource = ds.Tables["client"];// remplire le datagreedvue  avec le contenu de Datasource
-           // cnx.Close();// fermeture une base données
+            cnx.Close();// fermeture une base données
         }
 
         private void data_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void Ajt_Click(object sender, EventArgs e)
+        {
+            DataRow ligne;// précicer que le travailler dans les lignes;
+            ligne = ds.Tables["client"].NewRow();  // creation dune ligne dans la table client 
+            ligne["id"] = identif.Text;// ajouter une entrez dans le champ id à laide à linput identif
+            ligne["nom"] = Nom.Text;
+            ligne["prenom"] = prenom.Text;
+            ligne["adresse"] = adresse.Text;
+            ligne["ville"] = ville.Text;
+            ds.Tables["client"].Rows.Add(ligne);
 
         }
     }

@@ -32,7 +32,7 @@ namespace Gestion_Client
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.data = new System.Windows.Forms.DataGridView();
             this.Ajt = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.TextBox();
+            this.identif = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
             this.ville = new System.Windows.Forms.TextBox();
             this.prenom = new System.Windows.Forms.TextBox();
@@ -73,14 +73,15 @@ namespace Gestion_Client
             this.Ajt.TabIndex = 5;
             this.Ajt.Text = "Ajouter";
             this.Ajt.UseVisualStyleBackColor = false;
+            this.Ajt.Click += new System.EventHandler(this.Ajt_Click);
             // 
-            // ID
+            // identif
             // 
-            this.ID.Location = new System.Drawing.Point(25, 426);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(318, 20);
-            this.ID.TabIndex = 7;
-            this.ID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.identif.Location = new System.Drawing.Point(25, 426);
+            this.identif.Name = "identif";
+            this.identif.Size = new System.Drawing.Size(318, 20);
+            this.identif.TabIndex = 7;
+            this.identif.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Nom
             // 
@@ -234,7 +235,7 @@ namespace Gestion_Client
             this.Controls.Add(this.prenom);
             this.Controls.Add(this.ville);
             this.Controls.Add(this.Nom);
-            this.Controls.Add(this.ID);
+            this.Controls.Add(this.identif);
             this.Controls.Add(this.Ajt);
             this.Controls.Add(this.data);
             this.Name = "list1";
@@ -252,7 +253,7 @@ namespace Gestion_Client
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.DataGridView data;
         private System.Windows.Forms.Button Ajt;
-        private System.Windows.Forms.TextBox ID;
+        private System.Windows.Forms.TextBox identif;
         private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.TextBox ville;
         private System.Windows.Forms.TextBox prenom;
