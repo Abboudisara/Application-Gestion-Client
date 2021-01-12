@@ -37,7 +37,7 @@ namespace Gestion_Client
             this.ville = new System.Windows.Forms.TextBox();
             this.prenom = new System.Windows.Forms.TextBox();
             this.adresse = new System.Windows.Forms.TextBox();
-            this.cherche = new System.Windows.Forms.Button();
+            this.enrg = new System.Windows.Forms.Button();
             this.sup = new System.Windows.Forms.Button();
             this.upd = new System.Windows.Forms.Button();
             this.ressup = new System.Windows.Forms.TextBox();
@@ -111,24 +111,25 @@ namespace Gestion_Client
             this.adresse.Size = new System.Drawing.Size(177, 20);
             this.adresse.TabIndex = 11;
             // 
-            // cherche
+            // enrg
             // 
-            this.cherche.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.cherche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cherche.Location = new System.Drawing.Point(437, 352);
-            this.cherche.Name = "cherche";
-            this.cherche.Size = new System.Drawing.Size(147, 29);
-            this.cherche.TabIndex = 12;
-            this.cherche.Text = "Recherche";
-            this.cherche.UseVisualStyleBackColor = false;
+            this.enrg.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.enrg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enrg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.enrg.Location = new System.Drawing.Point(619, 350);
+            this.enrg.Name = "enrg";
+            this.enrg.Size = new System.Drawing.Size(147, 29);
+            this.enrg.TabIndex = 12;
+            this.enrg.Text = "Enregistrer";
+            this.enrg.UseVisualStyleBackColor = false;
+            this.enrg.Click += new System.EventHandler(this.enrg_Click);
             // 
             // sup
             // 
             this.sup.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.sup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.sup.Location = new System.Drawing.Point(618, 348);
+            this.sup.Location = new System.Drawing.Point(437, 350);
             this.sup.Name = "sup";
             this.sup.Size = new System.Drawing.Size(147, 29);
             this.sup.TabIndex = 13;
@@ -145,8 +146,9 @@ namespace Gestion_Client
             this.upd.Name = "upd";
             this.upd.Size = new System.Drawing.Size(147, 29);
             this.upd.TabIndex = 14;
-            this.upd.Text = "mise a jour";
+            this.upd.Text = "Modifier";
             this.upd.UseVisualStyleBackColor = false;
+            this.upd.Click += new System.EventHandler(this.upd_Click);
             // 
             // ressup
             // 
@@ -230,7 +232,7 @@ namespace Gestion_Client
             this.Controls.Add(this.ressup);
             this.Controls.Add(this.upd);
             this.Controls.Add(this.sup);
-            this.Controls.Add(this.cherche);
+            this.Controls.Add(this.enrg);
             this.Controls.Add(this.adresse);
             this.Controls.Add(this.prenom);
             this.Controls.Add(this.ville);
@@ -258,7 +260,7 @@ namespace Gestion_Client
         private System.Windows.Forms.TextBox ville;
         private System.Windows.Forms.TextBox prenom;
         private System.Windows.Forms.TextBox adresse;
-        private System.Windows.Forms.Button cherche;
+        private System.Windows.Forms.Button enrg;
         private System.Windows.Forms.Button sup;
         private System.Windows.Forms.Button upd;
         private System.Windows.Forms.TextBox ressup;
