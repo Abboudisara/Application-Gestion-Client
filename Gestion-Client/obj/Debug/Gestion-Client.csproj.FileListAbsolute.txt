@@ -1,0 +1,10 @@
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\bin\Debug\Gestion-Client.exe.config
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\bin\Debug\Gestion-Client.exe
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\bin\Debug\Gestion-Client.pdb
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\obj\Debug\Gestion-Client.csprojAssemblyReference.cache
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\obj\Debug\Gestion_Client.list1.resources
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\obj\Debug\Gestion_Client.Properties.Resources.resources
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\obj\Debug\Gestion-Client.csproj.GenerateResource.cache
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\obj\Debug\Gestion-Client.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\obj\Debug\Gestion-Client.exe
+C:\Users\Youcode\Desktop\Application-Gestion-Client\Gestion-Client\obj\Debug\Gestion-Client.pdb
